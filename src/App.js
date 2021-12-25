@@ -6,13 +6,7 @@ import Edit from "./pages/Edit";
 import {data} from "./components/data"
 
 class App extends React.Component {
-  getData = () => {
-    localStorage.setItem("data", JSON.stringify(data))
-  }
-
-  componentDidMount = () => {
-    this.getData();
-  }
+  
 
   render(){
   return (
@@ -21,7 +15,7 @@ class App extends React.Component {
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/edit" element={<Edit/>}/>
+            <Route path="/edit" element={<Edit />}/>
 
         </Routes>
         </BrowserRouter>

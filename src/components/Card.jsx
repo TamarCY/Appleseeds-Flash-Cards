@@ -8,7 +8,7 @@ class Card extends React.Component{
                 <div>Question: {this.props.cardData.q}</div>
                 <div>Answer: {this.props.cardData.a}</div>
                 <button>edit</button>
-                <button>delete</button>
+                <button >delete</button>
             </div>
         )
         }
